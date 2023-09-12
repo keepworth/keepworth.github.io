@@ -4,9 +4,33 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="图片测试, 泰迪熊の博客">
-    <meta name="description" content="风景图 - Bing images
-">
+    <meta name="keywords" content="泰迪熊の博客">
+    <meta name="description" content="C++ vector方法总结
+
+
+方法
+功能
+
+
+
+push_back
+在末尾加入一个元素
+
+
+pop_back
+在末尾弹出一个元素
+
+
+size
+获取长度
+
+
+clear
+清空
+
+
+
+vector动态数组:   vector  vec,这">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +42,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>图片测试 | 泰迪熊の博客</title>
+    <title>泰迪熊の博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -335,12 +359,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">图片测试</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -376,7 +400,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-09-05
+                    2023-09-11
                 </div>
                 
 
@@ -397,7 +421,39 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a target="_blank" rel="noopener" href="https://www.bing.com/images/search?view=detailV2&ccid=NO1TjIrL&id=B3F68D3F1C3D8BAE5F0BBB0ED3015737A31D4108&thid=OIP.NO1TjIrLqL6LYKzLrQsg8QHaEo&mediaurl=https://th.bing.com/th/id/R.34ed538c8acba8be8b60accbad0b20f1?rik=CEEdozdXAdMOuw&riu=http://i1.img.969g.com/down/imgx2014/12/22/289_093448_81ea8.jpg&ehk=OYBUuK5MsmiDsIm+iSARVx+D4KBQ10zBEZ4LF6OTIw8=&risl=&pid=ImgRaw&r=0&exph=1050&expw=1680&q=%E9%A3%8E%E6%99%AF%E5%9B%BE&simid=608004783658057238&FORM=IRPRST&ck=1512D5D8FA4E094C5060BD74AB60C9ED&selectedIndex=1&ajaxhist=0&ajaxserp=0">风景图 - Bing images</a></p>
+                <h1 id="C-vector方法总结"><a href="#C-vector方法总结" class="headerlink" title="C++ vector方法总结"></a>C++ vector方法总结</h1><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>push_back</td>
+<td>在末尾加入一个元素</td>
+</tr>
+<tr>
+<td>pop_back</td>
+<td>在末尾弹出一个元素</td>
+</tr>
+<tr>
+<td>size</td>
+<td>获取长度</td>
+</tr>
+<tr>
+<td>clear</td>
+<td>清空</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>vector动态数组:   vector<t>  vec,这样我们就定义了一个名为vec的储存t类型数据的动态数组，t可以是int，float，double等</p>
+</blockquote>
+<p>通过.size()获取长度</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i &lt; vec.<span class="built_in">size</span>(); i++)&#123;</span><br><span class="line">	cout&lt;&lt;v[i]&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p>调用clear()清空vector，注意不会清空内存，通过.swap()可以清空内存</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//vector&lt;int&gt; v;</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;().<span class="built_in">swap</span>(v); </span><br></pre></td></tr></table></figure>
+
 
                 
             </div>
@@ -424,7 +480,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ljsblog.cn/2023/09/05/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/">http://ljsblog.cn/2023/09/05/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/</a>
+                    <a href="http://ljsblog.cn/2023/09/11/vector/">http://ljsblog.cn/2023/09/11/vector/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -538,9 +594,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/09/11/vector/">
                     <div class="card-image">
@@ -558,9 +615,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -569,6 +626,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -579,13 +637,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/09/05/my-second-blog/">
+                <a href="/2023/09/05/%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="my-second-blog">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="图片测试">
                         
-                        <span class="card-title">my-second-blog</span>
+                        <span class="card-title">图片测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
